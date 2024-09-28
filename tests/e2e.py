@@ -82,7 +82,7 @@ def sized_page(page: Page, request):
 
 def test_home(page: Page, live_server_url: str):
     page.goto(live_server_url)
-    expect(page).to_have_title("Azure OpenAI + AI Search")
+    expect(page).to_have_title("Ask the Pope Ai OPEN BETA")
 
 
 def test_chat(sized_page: Page, live_server_url: str):
@@ -103,14 +103,14 @@ def test_chat(sized_page: Page, live_server_url: str):
 
     # Check initial page state
     page.goto(live_server_url)
-    expect(page).to_have_title("Azure OpenAI + AI Search")
-    expect(page.get_by_role("heading", name="Chat with your data")).to_be_visible()
+    expect(page).to_have_title("Ask the Pope Ai OPEN BETA")
+    expect(page.get_by_role("heading", name="Chat with the Lion!")).to_be_visible()
     expect(page.get_by_role("button", name="Clear chat")).to_be_disabled()
     expect(page.get_by_role("button", name="Developer settings")).to_be_enabled()
 
     # Ask a question and wait for the message to appear
-    page.get_by_placeholder("Type a new question (e.g. does my plan cover annual eye exams?)").click()
-    page.get_by_placeholder("Type a new question (e.g. does my plan cover annual eye exams?)").fill(
+    page.get_by_placeholder("Type a new question (e.g. what is required for ap european history?)").click()
+    page.get_by_placeholder("Type a new question (e.g. what is required for ap european history?)").fill(
         "Whats the dental plan?"
     )
     page.get_by_role("button", name="Submit question").click()
@@ -164,7 +164,7 @@ def test_chat_customization(page: Page, live_server_url: str):
 
     # Check initial page state
     page.goto(live_server_url)
-    expect(page).to_have_title("Azure OpenAI + AI Search")
+    expect(page).to_have_title("Ask the Pope Ai OPEN BETA")
 
     # Customize all the settings
     page.get_by_role("button", name="Developer settings").click()
@@ -182,8 +182,8 @@ def test_chat_customization(page: Page, live_server_url: str):
     page.locator("button").filter(has_text="Close").click()
 
     # Ask a question and wait for the message to appear
-    page.get_by_placeholder("Type a new question (e.g. does my plan cover annual eye exams?)").click()
-    page.get_by_placeholder("Type a new question (e.g. does my plan cover annual eye exams?)").fill(
+    page.get_by_placeholder("Type a new question (e.g. what is required for ap european history?)").click()
+    page.get_by_placeholder("Type a new question (e.g. what is required for ap european history?)").fill(
         "Whats the dental plan?"
     )
     page.get_by_role("button", name="Submit question").click()
@@ -226,7 +226,7 @@ def test_chat_customization_gpt4v(page: Page, live_server_url: str):
 
     # Check initial page state
     page.goto(live_server_url)
-    expect(page).to_have_title("Azure OpenAI + AI Search")
+    expect(page).to_have_title("Ask the Pope Ai OPEN BETA")
 
     # Customize the GPT-4-vision settings
     page.get_by_role("button", name="Developer settings").click()
@@ -239,8 +239,8 @@ def test_chat_customization_gpt4v(page: Page, live_server_url: str):
     page.locator("button").filter(has_text="Close").click()
 
     # Ask a question and wait for the message to appear
-    page.get_by_placeholder("Type a new question (e.g. does my plan cover annual eye exams?)").click()
-    page.get_by_placeholder("Type a new question (e.g. does my plan cover annual eye exams?)").fill(
+    page.get_by_placeholder("Type a new question (e.g. what is required for ap european history?)").click()
+    page.get_by_placeholder("Type a new question (e.g. what is required for ap european history?)").fill(
         "Whats the dental plan?"
     )
     page.get_by_label("Submit question").click()
@@ -259,15 +259,15 @@ def test_chat_nonstreaming(page: Page, live_server_url: str):
 
     # Check initial page state
     page.goto(live_server_url)
-    expect(page).to_have_title("Azure OpenAI + AI Search")
+    expect(page).to_have_title("Ask the Pope Ai OPEN BETA")
     expect(page.get_by_role("button", name="Developer settings")).to_be_enabled()
     page.get_by_role("button", name="Developer settings").click()
     page.get_by_text("Stream chat completion responses").click()
     page.locator("button").filter(has_text="Close").click()
 
     # Ask a question and wait for the message to appear
-    page.get_by_placeholder("Type a new question (e.g. does my plan cover annual eye exams?)").click()
-    page.get_by_placeholder("Type a new question (e.g. does my plan cover annual eye exams?)").fill(
+    page.get_by_placeholder("Type a new question (e.g. what is required for ap european history?)").click()
+    page.get_by_placeholder("Type a new question (e.g. what is required for ap european history?)").fill(
         "Whats the dental plan?"
     )
     page.get_by_label("Submit question").click()
@@ -292,15 +292,15 @@ def test_chat_followup_streaming(page: Page, live_server_url: str):
 
     # Check initial page state
     page.goto(live_server_url)
-    expect(page).to_have_title("Azure OpenAI + AI Search")
+    expect(page).to_have_title("Ask the Pope Ai OPEN BETA")
     expect(page.get_by_role("button", name="Developer settings")).to_be_enabled()
     page.get_by_role("button", name="Developer settings").click()
     page.get_by_text("Suggest follow-up questions").click()
     page.locator("button").filter(has_text="Close").click()
 
     # Ask a question and wait for the message to appear
-    page.get_by_placeholder("Type a new question (e.g. does my plan cover annual eye exams?)").click()
-    page.get_by_placeholder("Type a new question (e.g. does my plan cover annual eye exams?)").fill(
+    page.get_by_placeholder("Type a new question (e.g. what is required for ap european history?)").click()
+    page.get_by_placeholder("Type a new question (e.g. what is required for ap european history?)").fill(
         "Whats the dental plan?"
     )
     page.get_by_label("Submit question").click()
@@ -329,7 +329,7 @@ def test_chat_followup_nonstreaming(page: Page, live_server_url: str):
 
     # Check initial page state
     page.goto(live_server_url)
-    expect(page).to_have_title("Azure OpenAI + AI Search")
+    expect(page).to_have_title("Ask the Pope Ai OPEN BETA")
     expect(page.get_by_role("button", name="Developer settings")).to_be_enabled()
     page.get_by_role("button", name="Developer settings").click()
     page.get_by_text("Stream chat completion responses").click()
@@ -337,8 +337,8 @@ def test_chat_followup_nonstreaming(page: Page, live_server_url: str):
     page.locator("button").filter(has_text="Close").click()
 
     # Ask a question and wait for the message to appear
-    page.get_by_placeholder("Type a new question (e.g. does my plan cover annual eye exams?)").click()
-    page.get_by_placeholder("Type a new question (e.g. does my plan cover annual eye exams?)").fill(
+    page.get_by_placeholder("Type a new question (e.g. what is required for ap european history?)").click()
+    page.get_by_placeholder("Type a new question (e.g. what is required for ap european history?)").fill(
         "Whats the dental plan?"
     )
     page.get_by_label("Submit question").click()
@@ -370,15 +370,15 @@ def test_ask(sized_page: Page, live_server_url: str):
 
     page.route("*/**/ask", handle)
     page.goto(live_server_url)
-    expect(page).to_have_title("Azure OpenAI + AI Search")
+    expect(page).to_have_title("Ask the Pope Ai OPEN BETA")
 
     # The burger menu only exists at smaller viewport sizes
     if page.get_by_role("button", name="Toggle menu").is_visible():
         page.get_by_role("button", name="Toggle menu").click()
     page.get_by_role("link", name="Ask a question").click()
-    page.get_by_placeholder("Example: Does my plan cover annual eye exams?").click()
-    page.get_by_placeholder("Example: Does my plan cover annual eye exams?").fill("Whats the dental plan?")
-    page.get_by_placeholder("Example: Does my plan cover annual eye exams?").click()
+    page.get_by_placeholder("Example: What is required for AP European History?").click()
+    page.get_by_placeholder("Example: What is required for AP European History?").fill("Whats the dental plan?")
+    page.get_by_placeholder("Example: What is required for AP European History?").click()
     page.get_by_label("Submit question").click()
 
     expect(page.get_by_text("Whats the dental plan?")).to_be_visible()
@@ -411,7 +411,7 @@ def test_upload_hidden(page: Page, live_server_url: str):
 
     page.goto(live_server_url)
 
-    expect(page).to_have_title("Azure OpenAI + AI Search")
+    expect(page).to_have_title("Ask the Pope Ai OPEN BETA")
 
     expect(page.get_by_role("button", name="Clear chat")).to_be_visible()
     expect(page.get_by_role("button", name="Manage file uploads")).not_to_be_visible()
@@ -443,7 +443,7 @@ def test_upload_disabled(page: Page, live_server_url: str):
 
     page.goto(live_server_url)
 
-    expect(page).to_have_title("Azure OpenAI + AI Search")
+    expect(page).to_have_title("Ask the Pope Ai OPEN BETA")
 
     expect(page.get_by_role("button", name="Manage file uploads")).to_be_visible()
     expect(page.get_by_role("button", name="Manage file uploads")).to_be_disabled()
