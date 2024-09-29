@@ -2,6 +2,8 @@
 
 Ask the Pope AI is an Azure web app that hosts an AI chatbot designed specifically for Pope John XXIII Regional High School. This project utilizes Azure OpenAI and Azure AI Search to provide a ChatGPT-like experience tailored to questions about the school.
 
+This was created by the [Pope John AI Club](https://sites.google.com/view/pj-ai-club), founded by James DeSilver.
+
 ## Features
 
 - Chatbot experience tailored to Pope John XXIII Regional High School
@@ -46,4 +48,4 @@ This project is based on the [Azure Search OpenAI Demo](https://github.com/azure
 
 ## Feedback
 
-We're always looking to improve Ask the Pope AI. Please contact us through the [Pope John website](https://popejohn.org/contact) if you have feedback or suggestions.
+We're always looking to improve Ask the Pope AI. Please send feedback or suggestions to [my email](jdesilver2007@gmail.com).
