@@ -45,7 +45,3 @@ This combination ensures that responses are accurate, detailed, and grounded in 
 ## Credits
 
 This project is based on the [Azure Search OpenAI Demo](https://github.com/azure-samples/azure-search-openai-demo) by Microsoft, which provides a foundation for integrating Azure OpenAI and AI Search.
-
-## Feedback
-
-We're always looking to improve Ask the Pope AI. Please send feedback or suggestions to [my email](jdesilver2007@gmail.com).
