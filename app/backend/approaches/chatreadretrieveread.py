@@ -1,15 +1,15 @@
 from typing import Any, Coroutine, List, Literal, Optional, Union, overload
 
-from azure.search.documents.aio import SearchClient
-from azure.search.documents.models import VectorQuery
-from openai import AsyncOpenAI, AsyncStream
-from openai.types.chat import (
+from azure.search.documents.aio import SearchClient # type: ignore
+from azure.search.documents.models import VectorQuery # type: ignore
+from openai  import AsyncOpenAI, AsyncStream # type: ignore
+from openai.types.chat import ( # type: ignore
     ChatCompletion,
     ChatCompletionChunk,
     ChatCompletionMessageParam,
     ChatCompletionToolParam,
 )
-from openai_messages_token_helper import build_messages, get_token_limit
+from openai_messages_token_helper import build_messages, get_token_limit # type: ignore
 
 from approaches.approach import ThoughtStep
 from approaches.chatapproach import ChatApproach
@@ -55,7 +55,7 @@ class ChatReadRetrieveReadApproach(ChatApproach):
 
     @property
     def system_message_chat_conversation(self):
-        return """Assistant helps the academy employees with their healthcare plan questions, and questions about the employee handbook. Be brief in your answers.
+        return """Assistant helps the company employees with their healthcare plan questions, and questions about the employee handbook. Be brief in your answers.
         Answer ONLY with the facts listed in the list of sources below. If there isn't enough information below, say you don't know. Do not generate answers that don't use the sources below. If asking a clarifying question to the user would help, ask the question.
         If the question is not in English, answer in the language used in the question.
         Each source has a name followed by colon and the actual information, always include the source name for each fact you use in the response. Use square brackets to reference the source, for example [info1.txt]. Don't combine sources, list each source separately, for example [info1.txt][info2.pdf].
