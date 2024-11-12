@@ -20,7 +20,7 @@ The Ask the Pope AI app is hosted directly on [popejohn.org](https://popejohn.or
 
 ## Technology Stack
 
-- **Azure OpenAI Service**: Uses GPT-4 for natural language processing
+- **Azure OpenAI Service**: Uses GPT-4o for natural language processing
 - **Azure AI Search**: For indexing and retrieving school-specific information
 - **Azure Web App**: Provides a hosted environment for the chatbot
 
