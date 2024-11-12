@@ -4,6 +4,8 @@ Ask the Pope AI is an Azure web app that hosts an AI chatbot designed specifical
 
 This was created by the [Pope John AI Club](https://sites.google.com/view/pj-ai-club), founded by James DeSilver.
 
+NOTE: It is referenced as "Ask the Lion AI" on the website"
+
 ## Features
 
 - Chatbot experience tailored to Pope John XXIII Regional High School
