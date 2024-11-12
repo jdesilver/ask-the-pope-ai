@@ -1,6 +1,6 @@
 {
-    "pageTitle": "Ask the Pope Ai by the Pope John AI Club",
-    "headerTitle": "Ask the Pope Ai by the Pope John AI Club",
+    "pageTitle": "Ask the Lion Ai by the Lion John AI Club",
+    "headerTitle": "Ask the Lion Ai by the Lion John AI Club",
     "chat": "Chat",
     "qa": "Ask a question",
     "login": "Login",
@@ -29,7 +29,7 @@
         "3": "What is the boys winter uniform?",
         "placeholder": "Type a new question (e.g. what is required for ap european history?)"
     },
-    "askTitle": "Ask the Pope!",
+    "askTitle": "Ask the Lion!",
     "gpt4vExamples": {
         "1": "Compare the impact of interest rates and GDP in financial markets.",
         "2": "What is the expected trend for the S&P 500 index over the next five years? Compare it to the past S&P 500 performance",
