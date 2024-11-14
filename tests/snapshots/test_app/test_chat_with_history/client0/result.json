@@ -29,7 +29,7 @@
                         "role": "assistant"
                     },
                     {
-                        "content": "What does Mr. Myers teach?",
+                        "content": "How does Pope John promote Faith?",
                         "role": "user"
                     },
                     {
@@ -91,7 +91,7 @@
                         "role": "system"
                     },
                     {
-                        "content": "What does Mr. Myers teach?",
+                        "content": "How does Pope John promote Faith?",
                         "role": "user"
                     },
                     {

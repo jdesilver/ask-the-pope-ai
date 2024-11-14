@@ -24,17 +24,17 @@
     "chatEmptyStateTitle": "Chat with the Lion!",
     "chatEmptyStateSubtitle": "Ask anything or try an example",
     "defaultExamples": {
-        "1": "Name 3 clubs?",
-        "2": "What does Mr. Myers teach?",
-        "3": "What is the boys winter uniform?",
-        "placeholder": "Type a new question (e.g. what is required for ap european history?)"
+        "1": "Why should I go to Pope John?",
+        "2": "How does Pope John promote Faith?",
+        "3": "How does Pope John prepare you for college?",
+        "placeholder": "Or ask about the handbook, courses, clubs, teachers, schedules, lunches, the calender, and more!"
     },
     "askTitle": "Ask the Lion!",
     "gpt4vExamples": {
         "1": "Compare the impact of interest rates and GDP in financial markets.",
         "2": "What is the expected trend for the S&P 500 index over the next five years? Compare it to the past S&P 500 performance",
         "3": "Can you identify any correlation between oil prices and stock market trends?",
-        "placeholder": "Example: What is required for AP European History?"
+        "placeholder": "Or Ask about the Handbook, Courses, Clubs, Teachers, Schedules, Lunches, the Calender, and more!"
     },
     "generatingAnswer": "Generating answer",
     "citationWithColon": "Citation:",
