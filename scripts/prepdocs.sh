@@ -17,4 +17,4 @@ if [ $# -gt 0 ]; then
   additionalArgs="$@"
 fi
 
-./.venv/bin/python ./app/backend/prepdocs.py './data/Calender.pdf' --verbose $additionalArgs
+./.venv/bin/python ./app/backend/prepdocs.py './data/*' --verbose $additionalArgs
